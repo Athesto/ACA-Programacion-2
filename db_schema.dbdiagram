@@ -1,0 +1,123 @@
+{
+  "version": "1.0.0",
+  "darkMode": true,
+  "gridEnabling": false,
+  "detailLevel": "All",
+  "tablePositions": [
+    {
+      "name": "users",
+      "schemaName": "public",
+      "x": 0,
+      "y": 50
+    },
+    {
+      "name": "clients",
+      "schemaName": "public",
+      "x": 292.55517578125,
+      "y": 50
+    },
+    {
+      "name": "products",
+      "schemaName": "public",
+      "x": 557.51708984375,
+      "y": 50
+    },
+    {
+      "name": "inventory",
+      "schemaName": "public",
+      "x": 822.47900390625,
+      "y": 50
+    },
+    {
+      "name": "sales",
+      "schemaName": "public",
+      "x": 0,
+      "y": 260
+    },
+    {
+      "name": "sale_items",
+      "schemaName": "public",
+      "x": 292.55517578125,
+      "y": 196
+    }
+  ],
+  "tableGroupCollapseStates": [],
+  "stickyNoteLayouts": [],
+  "referencePaths": [
+    {
+      "firstFieldNames": [
+        "user_id"
+      ],
+      "firstTableName": "clients",
+      "firstSchemaName": "public",
+      "firstRelation": "*",
+      "secondFieldNames": [
+        "id"
+      ],
+      "secondTableName": "users",
+      "secondSchemaName": "public",
+      "secondRelation": "1",
+      "checkPoints": []
+    },
+    {
+      "firstFieldNames": [
+        "product_id"
+      ],
+      "firstTableName": "inventory",
+      "firstSchemaName": "public",
+      "firstRelation": "*",
+      "secondFieldNames": [
+        "id"
+      ],
+      "secondTableName": "products",
+      "secondSchemaName": "public",
+      "secondRelation": "1",
+      "checkPoints": []
+    },
+    {
+      "firstFieldNames": [
+        "client_id"
+      ],
+      "firstTableName": "sales",
+      "firstSchemaName": "public",
+      "firstRelation": "*",
+      "secondFieldNames": [
+        "id"
+      ],
+      "secondTableName": "clients",
+      "secondSchemaName": "public",
+      "secondRelation": "1",
+      "checkPoints": []
+    },
+    {
+      "firstFieldNames": [
+        "sale_id"
+      ],
+      "firstTableName": "sale_items",
+      "firstSchemaName": "public",
+      "firstRelation": "*",
+      "secondFieldNames": [
+        "id"
+      ],
+      "secondTableName": "sales",
+      "secondSchemaName": "public",
+      "secondRelation": "1",
+      "checkPoints": []
+    },
+    {
+      "firstFieldNames": [
+        "product_id"
+      ],
+      "firstTableName": "sale_items",
+      "firstSchemaName": "public",
+      "firstRelation": "*",
+      "secondFieldNames": [
+        "id"
+      ],
+      "secondTableName": "products",
+      "secondSchemaName": "public",
+      "secondRelation": "1",
+      "checkPoints": []
+    }
+  ]
+}
