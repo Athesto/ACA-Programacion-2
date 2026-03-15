@@ -7,14 +7,14 @@
     {
       "name": "users",
       "schemaName": "public",
-      "x": 0,
-      "y": 50
+      "x": 1.3450222372911576,
+      "y": 263.858535729294
     },
     {
       "name": "clients",
       "schemaName": "public",
-      "x": 292.55517578125,
-      "y": 50
+      "x": 291.2101535439588,
+      "y": 231.43773518681235
     },
     {
       "name": "products",
@@ -31,14 +31,14 @@
     {
       "name": "sales",
       "schemaName": "public",
-      "x": 0,
-      "y": 260
+      "x": 5.380088949164628,
+      "y": 50
     },
     {
       "name": "sale_items",
       "schemaName": "public",
-      "x": 292.55517578125,
-      "y": 196
+      "x": 285.83006459479424,
+      "y": 18
     }
   ],
   "tableGroupCollapseStates": [],
@@ -50,7 +50,7 @@
       ],
       "firstTableName": "clients",
       "firstSchemaName": "public",
-      "firstRelation": "*",
+      "firstRelation": "1",
       "secondFieldNames": [
         "id"
       ],
