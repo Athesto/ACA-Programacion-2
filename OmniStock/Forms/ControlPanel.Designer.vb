@@ -26,9 +26,13 @@ Partial Class ControlPanel
         TabUsers = New TabPage()
         Button1 = New Button()
         TabProducts = New TabPage()
+        Button2 = New Button()
         TabSales = New TabPage()
+        Button3 = New Button()
         TabControl1.SuspendLayout()
         TabUsers.SuspendLayout()
+        TabProducts.SuspendLayout()
+        TabSales.SuspendLayout()
         SuspendLayout()
         ' 
         ' TabControl1
@@ -55,7 +59,7 @@ Partial Class ControlPanel
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(22, 17)
+        Button1.Location = New Point(3, 3)
         Button1.Name = "Button1"
         Button1.Size = New Size(94, 29)
         Button1.TabIndex = 2
@@ -64,6 +68,7 @@ Partial Class ControlPanel
         ' 
         ' TabProducts
         ' 
+        TabProducts.Controls.Add(Button2)
         TabProducts.Location = New Point(4, 29)
         TabProducts.Name = "TabProducts"
         TabProducts.Padding = New Padding(3)
@@ -72,14 +77,33 @@ Partial Class ControlPanel
         TabProducts.Text = "Products"
         TabProducts.UseVisualStyleBackColor = True
         ' 
+        ' Button2
+        ' 
+        Button2.Location = New Point(3, 3)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(141, 29)
+        Button2.TabIndex = 3
+        Button2.Text = "Add Product"
+        Button2.UseVisualStyleBackColor = True
+        ' 
         ' TabSales
         ' 
+        TabSales.Controls.Add(Button3)
         TabSales.Location = New Point(4, 29)
         TabSales.Name = "TabSales"
         TabSales.Size = New Size(779, 504)
         TabSales.TabIndex = 2
         TabSales.Text = "Sales"
         TabSales.UseVisualStyleBackColor = True
+        ' 
+        ' Button3
+        ' 
+        Button3.Location = New Point(3, 3)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(141, 29)
+        Button3.TabIndex = 4
+        Button3.Text = "Add Sale"
+        Button3.UseVisualStyleBackColor = True
         ' 
         ' ControlPanel
         ' 
@@ -91,6 +115,8 @@ Partial Class ControlPanel
         Text = "ControlPanel"
         TabControl1.ResumeLayout(False)
         TabUsers.ResumeLayout(False)
+        TabProducts.ResumeLayout(False)
+        TabSales.ResumeLayout(False)
         ResumeLayout(False)
     End Sub
 
@@ -99,4 +125,6 @@ Partial Class ControlPanel
     Friend WithEvents TabProducts As TabPage
     Friend WithEvents TabSales As TabPage
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
 End Class
