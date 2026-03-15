@@ -23,11 +23,11 @@ Partial Class UserForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Label1 = New Label()
-        TextBox1 = New TextBox()
-        TextBox2 = New TextBox()
+        txtEmail = New TextBox()
+        txtPassword = New TextBox()
         Label2 = New Label()
         Label3 = New Label()
-        ComboBox1 = New ComboBox()
+        cmbRole = New ComboBox()
         Button1 = New Button()
         SuspendLayout()
         ' 
@@ -40,19 +40,19 @@ Partial Class UserForm
         Label1.TabIndex = 0
         Label1.Text = "Email"
         ' 
-        ' TextBox1
+        ' txtEmail
         ' 
-        TextBox1.Location = New Point(116, 42)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(247, 27)
-        TextBox1.TabIndex = 1
+        txtEmail.Location = New Point(116, 42)
+        txtEmail.Name = "txtEmail"
+        txtEmail.Size = New Size(247, 27)
+        txtEmail.TabIndex = 1
         ' 
-        ' TextBox2
+        ' txtPassword
         ' 
-        TextBox2.Location = New Point(116, 87)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(247, 27)
-        TextBox2.TabIndex = 3
+        txtPassword.Location = New Point(116, 87)
+        txtPassword.Name = "txtPassword"
+        txtPassword.Size = New Size(247, 27)
+        txtPassword.TabIndex = 3
         ' 
         ' Label2
         ' 
@@ -72,15 +72,15 @@ Partial Class UserForm
         Label3.TabIndex = 4
         Label3.Text = "Role"
         ' 
-        ' ComboBox1
+        ' cmbRole
         ' 
-        ComboBox1.FormattingEnabled = True
-        ComboBox1.Items.AddRange(New Object() {"Admin", "Client"})
-        ComboBox1.Location = New Point(116, 134)
-        ComboBox1.Name = "ComboBox1"
-        ComboBox1.Size = New Size(151, 28)
-        ComboBox1.TabIndex = 5
-        ComboBox1.Text = "Role"
+        cmbRole.FormattingEnabled = True
+        cmbRole.Items.AddRange(New Object() {"Admin", "Client"})
+        cmbRole.Location = New Point(116, 134)
+        cmbRole.Name = "cmbRole"
+        cmbRole.Size = New Size(151, 28)
+        cmbRole.TabIndex = 5
+        cmbRole.Text = "Role"
         ' 
         ' Button1
         ' 
@@ -97,11 +97,11 @@ Partial Class UserForm
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(399, 288)
         Controls.Add(Button1)
-        Controls.Add(ComboBox1)
+        Controls.Add(cmbRole)
         Controls.Add(Label3)
-        Controls.Add(TextBox2)
+        Controls.Add(txtPassword)
         Controls.Add(Label2)
-        Controls.Add(TextBox1)
+        Controls.Add(txtEmail)
         Controls.Add(Label1)
         Name = "UserForm"
         Text = "UserForm"
@@ -110,10 +110,10 @@ Partial Class UserForm
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txtEmail As TextBox
+    Friend WithEvents txtPassword As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents cmbRole As ComboBox
     Friend WithEvents Button1 As Button
 End Class
