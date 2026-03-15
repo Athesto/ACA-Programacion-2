@@ -26,6 +26,21 @@ Partial Class ControlPanel
         TabUsers = New TabPage()
         Button1 = New Button()
         TabProducts = New TabPage()
+        Submit = New Button()
+        txtPrice = New TextBox()
+        Label5 = New Label()
+        txtSku = New TextBox()
+        Label4 = New Label()
+        Edit = New Button()
+        txtStock = New TextBox()
+        Label3 = New Label()
+        Label2 = New Label()
+        txtName = New TextBox()
+        Label1 = New Label()
+        rtxtDescription = New RichTextBox()
+        Button5 = New Button()
+        Button4 = New Button()
+        cmbSku = New ComboBox()
         Button2 = New Button()
         TabSales = New TabPage()
         Button3 = New Button()
@@ -68,6 +83,21 @@ Partial Class ControlPanel
         ' 
         ' TabProducts
         ' 
+        TabProducts.Controls.Add(Submit)
+        TabProducts.Controls.Add(txtPrice)
+        TabProducts.Controls.Add(Label5)
+        TabProducts.Controls.Add(txtSku)
+        TabProducts.Controls.Add(Label4)
+        TabProducts.Controls.Add(Edit)
+        TabProducts.Controls.Add(txtStock)
+        TabProducts.Controls.Add(Label3)
+        TabProducts.Controls.Add(Label2)
+        TabProducts.Controls.Add(txtName)
+        TabProducts.Controls.Add(Label1)
+        TabProducts.Controls.Add(rtxtDescription)
+        TabProducts.Controls.Add(Button5)
+        TabProducts.Controls.Add(Button4)
+        TabProducts.Controls.Add(cmbSku)
         TabProducts.Controls.Add(Button2)
         TabProducts.Location = New Point(4, 29)
         TabProducts.Name = "TabProducts"
@@ -76,6 +106,136 @@ Partial Class ControlPanel
         TabProducts.TabIndex = 1
         TabProducts.Text = "Products"
         TabProducts.UseVisualStyleBackColor = True
+        ' 
+        ' Submit
+        ' 
+        Submit.Location = New Point(434, 449)
+        Submit.Name = "Submit"
+        Submit.Size = New Size(94, 29)
+        Submit.TabIndex = 22
+        Submit.Text = "Submit"
+        Submit.UseVisualStyleBackColor = True
+        ' 
+        ' txtPrice
+        ' 
+        txtPrice.Location = New Point(417, 148)
+        txtPrice.Name = "txtPrice"
+        txtPrice.ReadOnly = True
+        txtPrice.Size = New Size(116, 27)
+        txtPrice.TabIndex = 21
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.Location = New Point(368, 151)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(41, 20)
+        Label5.TabIndex = 20
+        Label5.Text = "Price"
+        ' 
+        ' txtSku
+        ' 
+        txtSku.Location = New Point(417, 102)
+        txtSku.Name = "txtSku"
+        txtSku.ReadOnly = True
+        txtSku.Size = New Size(116, 27)
+        txtSku.TabIndex = 19
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.Location = New Point(373, 105)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(36, 20)
+        Label4.TabIndex = 18
+        Label4.Text = "SKU"
+        ' 
+        ' Edit
+        ' 
+        Edit.Location = New Point(434, 414)
+        Edit.Name = "Edit"
+        Edit.Size = New Size(94, 29)
+        Edit.TabIndex = 17
+        Edit.Text = "Edit"
+        Edit.UseVisualStyleBackColor = True
+        ' 
+        ' txtStock
+        ' 
+        txtStock.Location = New Point(483, 199)
+        txtStock.Name = "txtStock"
+        txtStock.ReadOnly = True
+        txtStock.Size = New Size(45, 27)
+        txtStock.TabIndex = 16
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Location = New Point(412, 202)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(65, 20)
+        Label3.TabIndex = 15
+        Label3.Text = "Quantity"
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Location = New Point(6, 105)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(104, 20)
+        Label2.TabIndex = 14
+        Label2.Text = "Product Name"
+        ' 
+        ' txtName
+        ' 
+        txtName.Location = New Point(116, 102)
+        txtName.Name = "txtName"
+        txtName.ReadOnly = True
+        txtName.Size = New Size(226, 27)
+        txtName.TabIndex = 13
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Location = New Point(6, 151)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(85, 20)
+        Label1.TabIndex = 12
+        Label1.Text = "Description"
+        ' 
+        ' rtxtDescription
+        ' 
+        rtxtDescription.Location = New Point(6, 174)
+        rtxtDescription.Name = "rtxtDescription"
+        rtxtDescription.ReadOnly = True
+        rtxtDescription.Size = New Size(336, 313)
+        rtxtDescription.TabIndex = 11
+        rtxtDescription.Text = ""
+        ' 
+        ' Button5
+        ' 
+        Button5.Location = New Point(6, 60)
+        Button5.Name = "Button5"
+        Button5.Size = New Size(94, 29)
+        Button5.TabIndex = 6
+        Button5.Text = "Refresh"
+        Button5.UseVisualStyleBackColor = True
+        ' 
+        ' Button4
+        ' 
+        Button4.Location = New Point(321, 60)
+        Button4.Name = "Button4"
+        Button4.Size = New Size(125, 29)
+        Button4.TabIndex = 5
+        Button4.Text = "Fetch Product"
+        Button4.UseVisualStyleBackColor = True
+        ' 
+        ' cmbSku
+        ' 
+        cmbSku.FormattingEnabled = True
+        cmbSku.Location = New Point(134, 60)
+        cmbSku.Name = "cmbSku"
+        cmbSku.Size = New Size(155, 28)
+        cmbSku.TabIndex = 4
         ' 
         ' Button2
         ' 
@@ -116,6 +276,7 @@ Partial Class ControlPanel
         TabControl1.ResumeLayout(False)
         TabUsers.ResumeLayout(False)
         TabProducts.ResumeLayout(False)
+        TabProducts.PerformLayout()
         TabSales.ResumeLayout(False)
         ResumeLayout(False)
     End Sub
@@ -127,4 +288,19 @@ Partial Class ControlPanel
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
+    Friend WithEvents Button4 As Button
+    Friend WithEvents cmbSku As ComboBox
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Submit As Button
+    Friend WithEvents txtPrice As TextBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents txtSku As TextBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Edit As Button
+    Friend WithEvents txtStock As TextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents txtName As TextBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents rtxtDescription As RichTextBox
 End Class
