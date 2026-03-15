@@ -50,7 +50,7 @@
       ],
       "firstTableName": "clients",
       "firstSchemaName": "public",
-      "firstRelation": "1",
+      "firstRelation": "*",
       "secondFieldNames": [
         "id"
       ],

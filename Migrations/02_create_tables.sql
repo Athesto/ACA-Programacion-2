@@ -14,6 +14,7 @@ CREATE TABLE `products` (
   `id` int PRIMARY KEY AUTO_INCREMENT,
   `name` varchar(255) NOT NULL,
   `price` decimal(10,2) NOT NULL,
+  `sku` varchar(50) UNIQUE NOT NULL,
   `description` text
 );
 
