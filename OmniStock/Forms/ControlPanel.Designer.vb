@@ -58,7 +58,7 @@ Partial Class ControlPanel
         TabControl1.Location = New Point(12, 12)
         TabControl1.Name = "TabControl1"
         TabControl1.SelectedIndex = 0
-        TabControl1.Size = New Size(787, 537)
+        TabControl1.Size = New Size(617, 537)
         TabControl1.TabIndex = 0
         ' 
         ' TabUsers
@@ -102,7 +102,7 @@ Partial Class ControlPanel
         TabProducts.Location = New Point(4, 29)
         TabProducts.Name = "TabProducts"
         TabProducts.Padding = New Padding(3)
-        TabProducts.Size = New Size(779, 504)
+        TabProducts.Size = New Size(609, 504)
         TabProducts.TabIndex = 1
         TabProducts.Text = "Products"
         TabProducts.UseVisualStyleBackColor = True
@@ -118,6 +118,7 @@ Partial Class ControlPanel
         ' 
         ' txtPrice
         ' 
+        txtPrice.Enabled = False
         txtPrice.Location = New Point(417, 148)
         txtPrice.Name = "txtPrice"
         txtPrice.ReadOnly = True
@@ -135,6 +136,7 @@ Partial Class ControlPanel
         ' 
         ' txtSku
         ' 
+        txtSku.Enabled = False
         txtSku.Location = New Point(417, 102)
         txtSku.Name = "txtSku"
         txtSku.ReadOnly = True
@@ -161,6 +163,7 @@ Partial Class ControlPanel
         ' 
         ' txtStock
         ' 
+        txtStock.Enabled = False
         txtStock.Location = New Point(483, 199)
         txtStock.Name = "txtStock"
         txtStock.ReadOnly = True
@@ -187,6 +190,7 @@ Partial Class ControlPanel
         ' 
         ' txtName
         ' 
+        txtName.Enabled = False
         txtName.Location = New Point(116, 102)
         txtName.Name = "txtName"
         txtName.ReadOnly = True
@@ -204,6 +208,7 @@ Partial Class ControlPanel
         ' 
         ' rtxtDescription
         ' 
+        rtxtDescription.Enabled = False
         rtxtDescription.Location = New Point(6, 174)
         rtxtDescription.Name = "rtxtDescription"
         rtxtDescription.ReadOnly = True
@@ -269,8 +274,10 @@ Partial Class ControlPanel
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(811, 561)
+        ClientSize = New Size(643, 561)
         Controls.Add(TabControl1)
+        FormBorderStyle = FormBorderStyle.FixedSingle
+        MaximizeBox = False
         Name = "ControlPanel"
         Text = "ControlPanel"
         TabControl1.ResumeLayout(False)

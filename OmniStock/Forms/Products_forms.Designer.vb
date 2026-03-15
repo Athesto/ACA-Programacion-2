@@ -141,6 +141,8 @@ Partial Class Products_forms
         Controls.Add(txtName)
         Controls.Add(Label1)
         Controls.Add(rtxtDescription)
+        FormBorderStyle = FormBorderStyle.FixedSingle
+        MaximizeBox = False
         Name = "Products_forms"
         Text = "*"
         ResumeLayout(False)

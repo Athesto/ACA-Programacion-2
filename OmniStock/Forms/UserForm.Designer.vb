@@ -103,6 +103,8 @@ Partial Class UserForm
         Controls.Add(Label2)
         Controls.Add(txtEmail)
         Controls.Add(Label1)
+        FormBorderStyle = FormBorderStyle.FixedSingle
+        MaximizeBox = False
         Name = "UserForm"
         Text = "UserForm"
         ResumeLayout(False)

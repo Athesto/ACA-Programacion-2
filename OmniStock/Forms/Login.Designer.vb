@@ -103,6 +103,8 @@ Partial Class Login
         Controls.Add(Label3)
         Controls.Add(Label2)
         Controls.Add(Label1)
+        FormBorderStyle = FormBorderStyle.FixedSingle
+        MaximizeBox = False
         Name = "Login"
         Text = "Login"
         ResumeLayout(False)
