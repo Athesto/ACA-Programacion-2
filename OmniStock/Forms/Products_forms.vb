@@ -19,4 +19,8 @@
         Dim inventory_dao As New InventoryDAO()
         inventory_dao.Insert(productId, Integer.Parse(txtStock.Text))
     End Sub
+
+    Private Sub txtSku_TextChanged(sender As Object, e As EventArgs) Handles txtSku.TextChanged
+
+    End Sub
 End Class
