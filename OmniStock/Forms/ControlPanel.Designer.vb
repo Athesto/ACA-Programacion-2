@@ -44,23 +44,16 @@ Partial Class ControlPanel
         cmbSku = New ComboBox()
         Button2 = New Button()
         TabSales = New TabPage()
-        Button3 = New Button()
-        DataGridView1 = New DataGridView()
-        name = New DataGridViewTextBoxColumn()
-        sku = New DataGridViewTextBoxColumn()
-        price = New DataGridViewTextBoxColumn()
-        units = New DataGridViewTextBoxColumn()
-        subtotal = New DataGridViewTextBoxColumn()
-        Button6 = New Button()
-        ComboBox1 = New ComboBox()
+        Button8 = New Button()
         Button7 = New Button()
         ComboBox2 = New ComboBox()
-        Button8 = New Button()
+        Button6 = New Button()
+        ComboBox1 = New ComboBox()
+        Button3 = New Button()
         TabControl1.SuspendLayout()
         TabUsers.SuspendLayout()
         TabProducts.SuspendLayout()
         TabSales.SuspendLayout()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' TabControl1
@@ -80,7 +73,7 @@ Partial Class ControlPanel
         TabUsers.Location = New Point(4, 29)
         TabUsers.Name = "TabUsers"
         TabUsers.Padding = New Padding(3)
-        TabUsers.Size = New Size(609, 504)
+        TabUsers.Size = New Size(804, 504)
         TabUsers.TabIndex = 0
         TabUsers.Text = "Users"
         TabUsers.UseVisualStyleBackColor = True
@@ -282,7 +275,6 @@ Partial Class ControlPanel
         TabSales.Controls.Add(ComboBox2)
         TabSales.Controls.Add(Button6)
         TabSales.Controls.Add(ComboBox1)
-        TabSales.Controls.Add(DataGridView1)
         TabSales.Controls.Add(Button3)
         TabSales.Location = New Point(4, 29)
         TabSales.Name = "TabSales"
@@ -291,76 +283,14 @@ Partial Class ControlPanel
         TabSales.Text = "Sales"
         TabSales.UseVisualStyleBackColor = True
         ' 
-        ' Button3
+        ' Button8
         ' 
-        Button3.Location = New Point(3, 3)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(141, 29)
-        Button3.TabIndex = 4
-        Button3.Text = "Add Sale"
-        Button3.UseVisualStyleBackColor = True
-        ' 
-        ' DataGridView1
-        ' 
-        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Columns.AddRange(New DataGridViewColumn() {name, sku, price, units, subtotal})
-        DataGridView1.Location = New Point(20, 195)
-        DataGridView1.Name = "DataGridView1"
-        DataGridView1.RowHeadersWidth = 51
-        DataGridView1.Size = New Size(679, 188)
-        DataGridView1.TabIndex = 5
-        ' 
-        ' name
-        ' 
-        name.HeaderText = "Name"
-        name.MinimumWidth = 6
-        name.Name = "name"
-        name.Width = 125
-        ' 
-        ' sku
-        ' 
-        sku.HeaderText = "sku"
-        sku.MinimumWidth = 6
-        sku.Name = "sku"
-        sku.Width = 125
-        ' 
-        ' price
-        ' 
-        price.HeaderText = "units"
-        price.MinimumWidth = 6
-        price.Name = "price"
-        price.Width = 125
-        ' 
-        ' units
-        ' 
-        units.HeaderText = "price"
-        units.MinimumWidth = 6
-        units.Name = "units"
-        units.Width = 125
-        ' 
-        ' subtotal
-        ' 
-        subtotal.HeaderText = "subtotal"
-        subtotal.MinimumWidth = 6
-        subtotal.Name = "subtotal"
-        subtotal.Width = 125
-        ' 
-        ' Button6
-        ' 
-        Button6.Location = New Point(20, 54)
-        Button6.Name = "Button6"
-        Button6.Size = New Size(139, 29)
-        Button6.TabIndex = 8
-        Button6.Text = "Refresh Clients"
-        Button6.UseVisualStyleBackColor = True
-        ' 
-        ' ComboBox1
-        ' 
-        ComboBox1.FormattingEnabled = True
-        ComboBox1.Location = New Point(178, 55)
-        ComboBox1.Name = "ComboBox1"
-        ComboBox1.Size = New Size(155, 28)
-        ComboBox1.TabIndex = 7
+        Button8.Location = New Point(360, 106)
+        Button8.Name = "Button8"
+        Button8.Size = New Size(139, 29)
+        Button8.TabIndex = 11
+        Button8.Text = "Add"
+        Button8.UseVisualStyleBackColor = True
         ' 
         ' Button7
         ' 
@@ -379,18 +309,35 @@ Partial Class ControlPanel
         ComboBox2.Size = New Size(155, 28)
         ComboBox2.TabIndex = 9
         ' 
-        ' Button8
+        ' Button6
         ' 
-        Button8.Location = New Point(360, 106)
-        Button8.Name = "Button8"
-        Button8.Size = New Size(139, 29)
-        Button8.TabIndex = 11
-        Button8.Text = "Add"
-        Button8.UseVisualStyleBackColor = True
+        Button6.Location = New Point(20, 54)
+        Button6.Name = "Button6"
+        Button6.Size = New Size(139, 29)
+        Button6.TabIndex = 8
+        Button6.Text = "Refresh Clients"
+        Button6.UseVisualStyleBackColor = True
+        ' 
+        ' ComboBox1
+        ' 
+        ComboBox1.FormattingEnabled = True
+        ComboBox1.Location = New Point(178, 55)
+        ComboBox1.Name = "ComboBox1"
+        ComboBox1.Size = New Size(155, 28)
+        ComboBox1.TabIndex = 7
+        ' 
+        ' Button3
+        ' 
+        Button3.Location = New Point(3, 3)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(141, 29)
+        Button3.TabIndex = 4
+        Button3.Text = "Add Sale"
+        Button3.UseVisualStyleBackColor = True
         ' 
         ' ControlPanel
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(836, 561)
         Controls.Add(TabControl1)
@@ -403,7 +350,6 @@ Partial Class ControlPanel
         TabProducts.ResumeLayout(False)
         TabProducts.PerformLayout()
         TabSales.ResumeLayout(False)
-        CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -430,15 +376,9 @@ Partial Class ControlPanel
     Friend WithEvents Label1 As Label
     Friend WithEvents rtxtDescription As RichTextBox
     Friend WithEvents Delete As Button
-    Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Button8 As Button
     Friend WithEvents Button7 As Button
     Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents Button6 As Button
     Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents name As DataGridViewTextBoxColumn
-    Friend WithEvents sku As DataGridViewTextBoxColumn
-    Friend WithEvents price As DataGridViewTextBoxColumn
-    Friend WithEvents units As DataGridViewTextBoxColumn
-    Friend WithEvents subtotal As DataGridViewTextBoxColumn
 End Class
