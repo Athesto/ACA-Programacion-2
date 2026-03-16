@@ -24,6 +24,18 @@ Partial Class ControlPanel
     Private Sub InitializeComponent()
         TabControl1 = New TabControl()
         TabUsers = New TabPage()
+        Button11 = New Button()
+        Button12 = New Button()
+        Button13 = New Button()
+        txtUserRole = New TextBox()
+        Label8 = New Label()
+        txtUserPass = New TextBox()
+        Label6 = New Label()
+        Label7 = New Label()
+        txtUserEmail = New TextBox()
+        RefreshUsers = New Button()
+        Button10 = New Button()
+        cmbUsers = New ComboBox()
         Button1 = New Button()
         TabProducts = New TabPage()
         Delete = New Button()
@@ -69,6 +81,18 @@ Partial Class ControlPanel
         ' 
         ' TabUsers
         ' 
+        TabUsers.Controls.Add(Button11)
+        TabUsers.Controls.Add(Button12)
+        TabUsers.Controls.Add(Button13)
+        TabUsers.Controls.Add(txtUserRole)
+        TabUsers.Controls.Add(Label8)
+        TabUsers.Controls.Add(txtUserPass)
+        TabUsers.Controls.Add(Label6)
+        TabUsers.Controls.Add(Label7)
+        TabUsers.Controls.Add(txtUserEmail)
+        TabUsers.Controls.Add(RefreshUsers)
+        TabUsers.Controls.Add(Button10)
+        TabUsers.Controls.Add(cmbUsers)
         TabUsers.Controls.Add(Button1)
         TabUsers.Location = New Point(4, 29)
         TabUsers.Name = "TabUsers"
@@ -78,9 +102,117 @@ Partial Class ControlPanel
         TabUsers.Text = "Users"
         TabUsers.UseVisualStyleBackColor = True
         ' 
+        ' Button11
+        ' 
+        Button11.ForeColor = Color.Brown
+        Button11.Location = New Point(526, 260)
+        Button11.Name = "Button11"
+        Button11.Size = New Size(94, 29)
+        Button11.TabIndex = 28
+        Button11.Text = "Delete"
+        Button11.UseVisualStyleBackColor = True
+        ' 
+        ' Button12
+        ' 
+        Button12.Location = New Point(526, 295)
+        Button12.Name = "Button12"
+        Button12.Size = New Size(94, 29)
+        Button12.TabIndex = 27
+        Button12.Text = "Save"
+        Button12.UseVisualStyleBackColor = True
+        ' 
+        ' Button13
+        ' 
+        Button13.Location = New Point(526, 225)
+        Button13.Name = "Button13"
+        Button13.Size = New Size(94, 29)
+        Button13.TabIndex = 26
+        Button13.Text = "Edit"
+        Button13.UseVisualStyleBackColor = True
+        ' 
+        ' txtUserRole
+        ' 
+        txtUserRole.Enabled = False
+        txtUserRole.Location = New Point(248, 288)
+        txtUserRole.Name = "txtUserRole"
+        txtUserRole.ReadOnly = True
+        txtUserRole.Size = New Size(116, 27)
+        txtUserRole.TabIndex = 25
+        ' 
+        ' Label8
+        ' 
+        Label8.AutoSize = True
+        Label8.Location = New Point(204, 291)
+        Label8.Name = "Label8"
+        Label8.Size = New Size(39, 20)
+        Label8.TabIndex = 24
+        Label8.Text = "Role"
+        ' 
+        ' txtUserPass
+        ' 
+        txtUserPass.Enabled = False
+        txtUserPass.Location = New Point(248, 255)
+        txtUserPass.Name = "txtUserPass"
+        txtUserPass.ReadOnly = True
+        txtUserPass.Size = New Size(116, 27)
+        txtUserPass.TabIndex = 23
+        ' 
+        ' Label6
+        ' 
+        Label6.AutoSize = True
+        Label6.Location = New Point(173, 258)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(70, 20)
+        Label6.TabIndex = 22
+        Label6.Text = "Password"
+        ' 
+        ' Label7
+        ' 
+        Label7.AutoSize = True
+        Label7.Location = New Point(160, 225)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(79, 20)
+        Label7.TabIndex = 21
+        Label7.Text = "User Email"
+        ' 
+        ' txtUserEmail
+        ' 
+        txtUserEmail.Enabled = False
+        txtUserEmail.Location = New Point(248, 222)
+        txtUserEmail.Name = "txtUserEmail"
+        txtUserEmail.ReadOnly = True
+        txtUserEmail.Size = New Size(226, 27)
+        txtUserEmail.TabIndex = 20
+        ' 
+        ' RefreshUsers
+        ' 
+        RefreshUsers.Location = New Point(138, 175)
+        RefreshUsers.Name = "RefreshUsers"
+        RefreshUsers.Size = New Size(94, 29)
+        RefreshUsers.TabIndex = 9
+        RefreshUsers.Text = "Refresh"
+        RefreshUsers.UseVisualStyleBackColor = True
+        ' 
+        ' Button10
+        ' 
+        Button10.Location = New Point(453, 175)
+        Button10.Name = "Button10"
+        Button10.Size = New Size(167, 29)
+        Button10.TabIndex = 8
+        Button10.Text = "Fetch User/Client"
+        Button10.UseVisualStyleBackColor = True
+        ' 
+        ' cmbUsers
+        ' 
+        cmbUsers.FormattingEnabled = True
+        cmbUsers.Location = New Point(266, 175)
+        cmbUsers.Name = "cmbUsers"
+        cmbUsers.Size = New Size(155, 28)
+        cmbUsers.TabIndex = 7
+        ' 
         ' Button1
         ' 
-        Button1.Location = New Point(3, 3)
+        Button1.Location = New Point(19, 24)
         Button1.Name = "Button1"
         Button1.Size = New Size(94, 29)
         Button1.TabIndex = 2
@@ -117,7 +249,7 @@ Partial Class ControlPanel
         ' Delete
         ' 
         Delete.ForeColor = Color.Brown
-        Delete.Location = New Point(434, 290)
+        Delete.Location = New Point(579, 287)
         Delete.Name = "Delete"
         Delete.Size = New Size(94, 29)
         Delete.TabIndex = 23
@@ -126,17 +258,17 @@ Partial Class ControlPanel
         ' 
         ' Submit
         ' 
-        Submit.Location = New Point(434, 449)
+        Submit.Location = New Point(579, 446)
         Submit.Name = "Submit"
         Submit.Size = New Size(94, 29)
         Submit.TabIndex = 22
-        Submit.Text = "Submit"
+        Submit.Text = "Save"
         Submit.UseVisualStyleBackColor = True
         ' 
         ' txtPrice
         ' 
         txtPrice.Enabled = False
-        txtPrice.Location = New Point(417, 148)
+        txtPrice.Location = New Point(562, 145)
         txtPrice.Name = "txtPrice"
         txtPrice.ReadOnly = True
         txtPrice.Size = New Size(116, 27)
@@ -145,7 +277,7 @@ Partial Class ControlPanel
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Location = New Point(368, 151)
+        Label5.Location = New Point(513, 148)
         Label5.Name = "Label5"
         Label5.Size = New Size(41, 20)
         Label5.TabIndex = 20
@@ -154,7 +286,7 @@ Partial Class ControlPanel
         ' txtSku
         ' 
         txtSku.Enabled = False
-        txtSku.Location = New Point(417, 102)
+        txtSku.Location = New Point(562, 99)
         txtSku.Name = "txtSku"
         txtSku.ReadOnly = True
         txtSku.Size = New Size(116, 27)
@@ -163,7 +295,7 @@ Partial Class ControlPanel
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(373, 105)
+        Label4.Location = New Point(518, 102)
         Label4.Name = "Label4"
         Label4.Size = New Size(36, 20)
         Label4.TabIndex = 18
@@ -171,7 +303,7 @@ Partial Class ControlPanel
         ' 
         ' Edit
         ' 
-        Edit.Location = New Point(434, 255)
+        Edit.Location = New Point(579, 252)
         Edit.Name = "Edit"
         Edit.Size = New Size(94, 29)
         Edit.TabIndex = 17
@@ -181,7 +313,7 @@ Partial Class ControlPanel
         ' txtStock
         ' 
         txtStock.Enabled = False
-        txtStock.Location = New Point(483, 199)
+        txtStock.Location = New Point(628, 196)
         txtStock.Name = "txtStock"
         txtStock.ReadOnly = True
         txtStock.Size = New Size(45, 27)
@@ -190,7 +322,7 @@ Partial Class ControlPanel
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(412, 202)
+        Label3.Location = New Point(557, 199)
         Label3.Name = "Label3"
         Label3.Size = New Size(65, 20)
         Label3.TabIndex = 15
@@ -199,7 +331,7 @@ Partial Class ControlPanel
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(6, 105)
+        Label2.Location = New Point(151, 102)
         Label2.Name = "Label2"
         Label2.Size = New Size(104, 20)
         Label2.TabIndex = 14
@@ -208,7 +340,7 @@ Partial Class ControlPanel
         ' txtName
         ' 
         txtName.Enabled = False
-        txtName.Location = New Point(116, 102)
+        txtName.Location = New Point(261, 99)
         txtName.Name = "txtName"
         txtName.ReadOnly = True
         txtName.Size = New Size(226, 27)
@@ -217,7 +349,7 @@ Partial Class ControlPanel
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(6, 151)
+        Label1.Location = New Point(151, 148)
         Label1.Name = "Label1"
         Label1.Size = New Size(85, 20)
         Label1.TabIndex = 12
@@ -226,7 +358,7 @@ Partial Class ControlPanel
         ' rtxtDescription
         ' 
         rtxtDescription.Enabled = False
-        rtxtDescription.Location = New Point(6, 174)
+        rtxtDescription.Location = New Point(151, 171)
         rtxtDescription.Name = "rtxtDescription"
         rtxtDescription.ReadOnly = True
         rtxtDescription.Size = New Size(336, 313)
@@ -235,7 +367,7 @@ Partial Class ControlPanel
         ' 
         ' Button5
         ' 
-        Button5.Location = New Point(6, 60)
+        Button5.Location = New Point(151, 57)
         Button5.Name = "Button5"
         Button5.Size = New Size(94, 29)
         Button5.TabIndex = 6
@@ -244,7 +376,7 @@ Partial Class ControlPanel
         ' 
         ' Button4
         ' 
-        Button4.Location = New Point(321, 60)
+        Button4.Location = New Point(466, 57)
         Button4.Name = "Button4"
         Button4.Size = New Size(125, 29)
         Button4.TabIndex = 5
@@ -254,7 +386,7 @@ Partial Class ControlPanel
         ' cmbSku
         ' 
         cmbSku.FormattingEnabled = True
-        cmbSku.Location = New Point(134, 60)
+        cmbSku.Location = New Point(279, 57)
         cmbSku.Name = "cmbSku"
         cmbSku.Size = New Size(155, 28)
         cmbSku.TabIndex = 4
@@ -347,6 +479,7 @@ Partial Class ControlPanel
         Text = "ControlPanel"
         TabControl1.ResumeLayout(False)
         TabUsers.ResumeLayout(False)
+        TabUsers.PerformLayout()
         TabProducts.ResumeLayout(False)
         TabProducts.PerformLayout()
         TabSales.ResumeLayout(False)
@@ -381,4 +514,16 @@ Partial Class ControlPanel
     Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents Button6 As Button
     Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents RefreshUsers As Button
+    Friend WithEvents Button10 As Button
+    Friend WithEvents cmbUsers As ComboBox
+    Friend WithEvents txtUserRole As TextBox
+    Friend WithEvents Label8 As Label
+    Friend WithEvents txtUserPass As TextBox
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents txtUserEmail As TextBox
+    Friend WithEvents Button11 As Button
+    Friend WithEvents Button12 As Button
+    Friend WithEvents Button13 As Button
 End Class

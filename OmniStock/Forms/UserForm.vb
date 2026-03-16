@@ -1,8 +1,11 @@
-﻿Public Class UserForm
+﻿Imports System.Windows.Forms.ComponentModel.Com2Interop
+Imports System.Windows.Forms.VisualStyles
+
+Public Class UserForm
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim rnd As New Random()
         Dim rndValue = rnd.Next(1000, 9999)
-        txtEmail.Text = "user" & rndValue
+        txtEmail.Text = "user" & rndValue & "@test.com"
         txtPassword.Text = rndValue
         cmbRole.Text = "client"
 
