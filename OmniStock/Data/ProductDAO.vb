@@ -68,4 +68,17 @@ Public Class ProductDAO
         }
         Return DbHelper.ExecuteScalar(sql, parameters)
     End Function
+
+    Public Function GetAvailableProducts() As DataTable
+
+        Dim sql As String =
+        "SELECT p.id, p.sku, p.name, p.price, i.units " &
+        "FROM products p " &
+        "JOIN inventory i ON p.id = i.product_id " &
+        "WHERE i.units > 0"
+
+        Return DbHelper.ExecuteDataTable(sql)
+
+    End Function
+
 End Class

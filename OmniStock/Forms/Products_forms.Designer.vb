@@ -37,99 +37,110 @@ Partial Class Products_forms
         ' 
         ' rtxtDescription
         ' 
-        rtxtDescription.Location = New Point(12, 104)
+        rtxtDescription.Location = New Point(15, 130)
+        rtxtDescription.Margin = New Padding(4, 4, 4, 4)
         rtxtDescription.Name = "rtxtDescription"
-        rtxtDescription.Size = New Size(336, 313)
+        rtxtDescription.Size = New Size(419, 390)
         rtxtDescription.TabIndex = 0
         rtxtDescription.Text = ""
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(12, 81)
+        Label1.Location = New Point(15, 101)
+        Label1.Margin = New Padding(4, 0, 4, 0)
         Label1.Name = "Label1"
-        Label1.Size = New Size(85, 20)
+        Label1.Size = New Size(102, 25)
         Label1.TabIndex = 1
         Label1.Text = "Description"
         ' 
         ' txtName
         ' 
-        txtName.Location = New Point(122, 32)
+        txtName.Location = New Point(152, 40)
+        txtName.Margin = New Padding(4, 4, 4, 4)
         txtName.Name = "txtName"
-        txtName.Size = New Size(226, 27)
+        txtName.Size = New Size(282, 31)
         txtName.TabIndex = 2
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(12, 35)
+        Label2.Location = New Point(15, 44)
+        Label2.Margin = New Padding(4, 0, 4, 0)
         Label2.Name = "Label2"
-        Label2.Size = New Size(104, 20)
+        Label2.Size = New Size(126, 25)
         Label2.TabIndex = 3
         Label2.Text = "Product Name"
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(418, 132)
+        Label3.Location = New Point(522, 165)
+        Label3.Margin = New Padding(4, 0, 4, 0)
         Label3.Name = "Label3"
-        Label3.Size = New Size(65, 20)
+        Label3.Size = New Size(80, 25)
         Label3.TabIndex = 4
         Label3.Text = "Quantity"
         ' 
         ' txtStock
         ' 
-        txtStock.Location = New Point(489, 129)
+        txtStock.Location = New Point(611, 161)
+        txtStock.Margin = New Padding(4, 4, 4, 4)
         txtStock.Name = "txtStock"
-        txtStock.Size = New Size(45, 27)
+        txtStock.Size = New Size(55, 31)
         txtStock.TabIndex = 5
         ' 
         ' Submit
         ' 
-        Submit.Location = New Point(440, 388)
+        Submit.Location = New Point(550, 485)
+        Submit.Margin = New Padding(4, 4, 4, 4)
         Submit.Name = "Submit"
-        Submit.Size = New Size(94, 29)
+        Submit.Size = New Size(118, 36)
         Submit.TabIndex = 6
         Submit.Text = "Submit"
         Submit.UseVisualStyleBackColor = True
         ' 
         ' txtSku
         ' 
-        txtSku.Location = New Point(423, 32)
+        txtSku.Location = New Point(529, 40)
+        txtSku.Margin = New Padding(4, 4, 4, 4)
         txtSku.Name = "txtSku"
-        txtSku.Size = New Size(116, 27)
+        txtSku.Size = New Size(144, 31)
         txtSku.TabIndex = 8
         ' 
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(379, 35)
+        Label4.Location = New Point(474, 44)
+        Label4.Margin = New Padding(4, 0, 4, 0)
         Label4.Name = "Label4"
-        Label4.Size = New Size(36, 20)
+        Label4.Size = New Size(44, 25)
         Label4.TabIndex = 7
         Label4.Text = "SKU"
         ' 
         ' txtPrice
         ' 
-        txtPrice.Location = New Point(423, 78)
+        txtPrice.Location = New Point(529, 98)
+        txtPrice.Margin = New Padding(4, 4, 4, 4)
         txtPrice.Name = "txtPrice"
-        txtPrice.Size = New Size(116, 27)
+        txtPrice.Size = New Size(144, 31)
         txtPrice.TabIndex = 10
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Location = New Point(374, 81)
+        Label5.Location = New Point(468, 101)
+        Label5.Margin = New Padding(4, 0, 4, 0)
         Label5.Name = "Label5"
-        Label5.Size = New Size(41, 20)
+        Label5.Size = New Size(49, 25)
         Label5.TabIndex = 9
         Label5.Text = "Price"
         ' 
         ' Products_forms
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(565, 450)
+        ClientSize = New Size(706, 562)
         Controls.Add(txtPrice)
         Controls.Add(Label5)
         Controls.Add(txtSku)
@@ -143,6 +154,7 @@ Partial Class Products_forms
         Controls.Add(rtxtDescription)
         FormBorderStyle = FormBorderStyle.FixedSingle
         MaximizeBox = False
+        Margin = New Padding(4, 4, 4, 4)
         Name = "Products_forms"
         Text = "*"
         ResumeLayout(False)
